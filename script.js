@@ -13,8 +13,8 @@ document.addEventListener('DOMContentLoaded', ()=>{
     let y = 100;
 
     //text
-    ctx.fillText('Aksi 1',112,90);
-    ctx.fillText('Aksi 2',512,90);
+    ctx.fillText('Aksi 1',190,90);
+    ctx.fillText('Aksi 2',570,90);
     ctx.fillText('Aksi 3',190,440);
     ctx.fillText('Aksi 4',570,440);
 
