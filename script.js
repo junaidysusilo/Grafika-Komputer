@@ -9,16 +9,13 @@ document.addEventListener('DOMContentLoaded', ()=>{
     ctx.lineWidth = 2;
     ctx.textAlign = 'start';
     ctx.font = 'normal 30px Arial';
-    
-
-    
-
       
     let x = 100;
     let y = 100;
 
     //text
     ctx.fillText('Aksi 1',112,150);
+    ctx.fillText('Aksi 2',512,150);
 
 //Aksi1
     //Badan
@@ -74,7 +71,7 @@ document.addEventListener('DOMContentLoaded', ()=>{
 
     ctx.save();
     ctx.beginPath();
-    ctx.translate(500, 280);
+    ctx.translate(500, 200);
     ctx.rect(0,0,100,100)
     ctx.fillStyle = 'red';
     ctx.fill();
@@ -85,7 +82,7 @@ document.addEventListener('DOMContentLoaded', ()=>{
     //Kiri 
     ctx.save();
     ctx.beginPath();
-    ctx.translate(500, 280);
+    ctx.translate(500, 200);
     ctx.rotate(Math.PI*-9/8);        //3.14 radians 180 deg
     ctx.rect(0,0,100,25)
     ctx.fillStyle = 'blue';
@@ -98,7 +95,7 @@ document.addEventListener('DOMContentLoaded', ()=>{
     //Mata Kiri
     ctx.save();
     ctx.beginPath();
-    ctx.translate(525, 305)
+    ctx.translate(525, 225)
     ctx.scale(1,1)
     ctx.arc(0, 0, 15, 0, Math.PI*2);
     ctx.fillStyle = 'orange';
@@ -109,7 +106,7 @@ document.addEventListener('DOMContentLoaded', ()=>{
     //Mata Kanan
     ctx.save();
     ctx.beginPath();
-    ctx.translate(575, 305)
+    ctx.translate(575, 225)
     ctx.scale(1,1)
     ctx.arc(0, 0, 15, 0, Math.PI*2);
     ctx.fillStyle = 'orange';
