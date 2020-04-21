@@ -4,8 +4,6 @@ document.addEventListener('DOMContentLoaded', ()=>{
     ctx = canvas.getContext('2d');
     canvas.width = 800;
     canvas.height = 900;
-    ctx.strokeStyle = '#ccc';
-    ctx.lineWidth = 2;
     ctx.textAlign = 'start';
     ctx.font = 'normal 30px Arial';
       
@@ -19,19 +17,17 @@ document.addEventListener('DOMContentLoaded', ()=>{
     ctx.fillText('Aksi 4',570,440);
 
 //Aksi1
-    //Badan
     //Kotak
     ctx.save();
     ctx.beginPath();
     ctx.translate(150, 200);
     ctx.rect(0,0,150,100)
-    ctx.fillStyle = 'red';
+    ctx.fillStyle = '#ECF0F1';
     ctx.fill();
     ctx.closePath();
     ctx.restore();
 
-    //Tangan
-    //Kiri 
+    //Tutup
     ctx.save();
     ctx.beginPath();
     ctx.translate(150, 200);
@@ -43,33 +39,29 @@ document.addEventListener('DOMContentLoaded', ()=>{
     ctx.restore();
 
 
-    //Muka
-    //Mata Kiri
+    //Lingkaran
     ctx.save();
     ctx.beginPath();
     ctx.translate(225, 250)
     ctx.scale(1,1)
     ctx.arc(0, 0, 35, 0, Math.PI*2);
-    ctx.fillStyle = 'orange';
-    ctx.fill();
-    ctx.closePath();
-    ctx.restore();
-
-//Aksi2
-    //Badan
-    //Kotak
-
-    ctx.save();
-    ctx.beginPath();
-    ctx.translate(540, 200);
-    ctx.rect(0,0,150,100)
     ctx.fillStyle = 'red';
     ctx.fill();
     ctx.closePath();
     ctx.restore();
 
-    //Tangan
-    //Kiri 
+//Aksi2
+    //Kotak
+    ctx.save();
+    ctx.beginPath();
+    ctx.translate(540, 200);
+    ctx.rect(0,0,150,100)
+    ctx.fillStyle = '#ECF0F1';
+    ctx.fill();
+    ctx.closePath();
+    ctx.restore();
+
+    //Tutup
     ctx.save();
     ctx.beginPath();
     ctx.translate(540, 200);
@@ -81,34 +73,31 @@ document.addEventListener('DOMContentLoaded', ()=>{
     ctx.restore();
 
 
-    //Muka
-    //Mata Kiri
+    //Lingkaran
     ctx.save();
     ctx.beginPath();
     ctx.translate(615, 250)
     ctx.scale(1,1)
     ctx.arc(0, 0, 35, 0, Math.PI*2);
-    ctx.fillStyle = 'orange';
+    ctx.fillStyle = 'red';
     ctx.fill();
     ctx.closePath();
     ctx.restore();
 
     
 //Aksi3
-    //Badan
     //Kotak
 
     ctx.save();
     ctx.beginPath();
     ctx.translate(150, 560);
     ctx.rect(0,0,150,100)
-    ctx.fillStyle = 'red';
+    ctx.fillStyle = '#ECF0F1';
     ctx.fill();
     ctx.closePath();
     ctx.restore();
 
-    //Tangan
-    //Kiri 
+    //Tutup
     ctx.save();
     ctx.beginPath();
     ctx.translate(150, 560);
@@ -119,33 +108,30 @@ document.addEventListener('DOMContentLoaded', ()=>{
     ctx.closePath();
     ctx.restore();
 
-    //Muka
-    //Mata Kiri
+    //Lingkaran
     ctx.save();
     ctx.beginPath();
     ctx.translate(225, 610)
     ctx.scale(1,1)
     ctx.arc(0, 0, 35, 0, Math.PI*2);
-    ctx.fillStyle = 'orange';
+    ctx.fillStyle = 'red';
     ctx.fill();
     ctx.closePath();
     ctx.restore(); 
     
 //Aksi4
-    //Badan
     //Kotak
 
     ctx.save();
     ctx.beginPath();
     ctx.translate(540, 560);
     ctx.rect(0,0,150,100)
-    ctx.fillStyle = 'red';
+    ctx.fillStyle = '#ECF0F1';
     ctx.fill();
     ctx.closePath();
     ctx.restore();
 
-    //Tangan
-    //Kiri 
+    //Tutup 
     ctx.save();
     ctx.beginPath();
     ctx.translate(540, 540);
@@ -156,14 +142,13 @@ document.addEventListener('DOMContentLoaded', ()=>{
     ctx.closePath();
     ctx.restore();
 
-    //Muka
-    //Mata Kiri
+    //Lingkaran
     ctx.save();
     ctx.beginPath();
     ctx.translate(615, 610)
     ctx.scale(1,1)
     ctx.arc(0, 0, 35, 0, Math.PI*2);
-    ctx.fillStyle = 'orange';
+    ctx.fillStyle = 'red';
     ctx.fill();
     ctx.closePath();
     ctx.restore();  
