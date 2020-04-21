@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', ()=>{
     canvas = document.getElementById('canvas');
     ctx = canvas.getContext('2d');
     canvas.width = 700;
-    canvas.height = 900;
+    canvas.height = 1000;
     ctx.strokeStyle = '#ccc';
     ctx.lineWidth = 2;
     ctx.textAlign = 'start';
@@ -62,7 +62,7 @@ document.addEventListener('DOMContentLoaded', ()=>{
     ctx.save();
     ctx.beginPath();
     ctx.translate(500, 200);
-    ctx.rect(0,0,150,100)
+    ctx.rect(0,0,100,100)
     ctx.fillStyle = 'red';
     ctx.fill();
     ctx.closePath();
@@ -74,7 +74,7 @@ document.addEventListener('DOMContentLoaded', ()=>{
     ctx.beginPath();
     ctx.translate(500, 200);
     ctx.rotate(Math.PI*-9/8);        //3.14 radians 180 deg
-    ctx.rect(0,0,150,25)
+    ctx.rect(0,0,100,25)
     ctx.fillStyle = 'blue';
     ctx.fill();
     ctx.closePath();
@@ -85,7 +85,7 @@ document.addEventListener('DOMContentLoaded', ()=>{
     //Mata Kiri
     ctx.save();
     ctx.beginPath();
-    ctx.translate(575, 250)
+    ctx.translate(550, 250)
     ctx.scale(1,1)
     ctx.arc(0, 0, 35, 0, Math.PI*2);
     ctx.fillStyle = 'orange';
@@ -101,7 +101,7 @@ document.addEventListener('DOMContentLoaded', ()=>{
     ctx.save();
     ctx.beginPath();
     ctx.translate(100, 560);
-    ctx.rect(0,0,150,100)
+    ctx.rect(0,0,100,100)
     ctx.fillStyle = 'red';
     ctx.fill();
     ctx.closePath();
@@ -113,7 +113,7 @@ document.addEventListener('DOMContentLoaded', ()=>{
     ctx.beginPath();
     ctx.translate(100, 560);
     ctx.rotate(Math.PI*-7/8);        //3.14 radians 180 deg
-    ctx.rect(0,0,150,25)
+    ctx.rect(0,0,100,25)
     ctx.fillStyle = 'blue';
     ctx.fill();
     ctx.closePath();
@@ -123,7 +123,7 @@ document.addEventListener('DOMContentLoaded', ()=>{
     //Mata Kiri
     ctx.save();
     ctx.beginPath();
-    ctx.translate(175, 610)
+    ctx.translate(150, 610)
     ctx.scale(1,1)
     ctx.arc(0, 0, 35, 0, Math.PI*2);
     ctx.fillStyle = 'orange';
