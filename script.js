@@ -69,15 +69,3 @@ document.addEventListener('DOMContentLoaded', ()=>{
 
     
 });
-
-    ctx.beginPath();
-    for(x=gap; x<canvas.width; x=x+gap){
-        ctx.moveTo(x, 0);
-        ctx.lineTo(x, canvas.height);
-    }
-    for(let y=gap; y<canvas.height; y=y+gap){
-        ctx.moveTo(0, y);
-        ctx.lineTo(canvas.height, y);
-    }
-    ctx.stroke();
-    ctx.closePath();
