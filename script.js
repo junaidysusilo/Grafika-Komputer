@@ -85,24 +85,14 @@ document.addEventListener('DOMContentLoaded', ()=>{
     //Mata Kiri
     ctx.save();
     ctx.beginPath();
-    ctx.translate(525, 225)
+    ctx.translate(550, 250)
     ctx.scale(1,1)
-    ctx.arc(0, 0, 15, 0, Math.PI*2);
+    ctx.arc(0, 0, 35, 0, Math.PI*2);
     ctx.fillStyle = 'orange';
     ctx.fill();
     ctx.closePath();
     ctx.restore();
 
-    //Mata Kanan
-    ctx.save();
-    ctx.beginPath();
-    ctx.translate(575, 225)
-    ctx.scale(1,1)
-    ctx.arc(0, 0, 15, 0, Math.PI*2);
-    ctx.fillStyle = 'orange';
-    ctx.fill();
-    ctx.closePath();
-    ctx.restore();
     
 //Aksi3
     //Badan
