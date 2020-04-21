@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', ()=>{
     ctx.lineWidth = 2;
     ctx.textAlign = 'start';
     ctx.font = 'normal 30px Arial';
-    drawGrid(100);
+    
 
     
 
@@ -70,7 +70,6 @@ document.addEventListener('DOMContentLoaded', ()=>{
     
 });
 
-function drawGrid(gap){
     ctx.beginPath();
     for(x=gap; x<canvas.width; x=x+gap){
         ctx.moveTo(x, 0);
@@ -82,4 +81,3 @@ function drawGrid(gap){
     }
     ctx.stroke();
     ctx.closePath();
-}
