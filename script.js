@@ -4,7 +4,6 @@ document.addEventListener('DOMContentLoaded', ()=>{
     ctx = canvas.getContext('2d');
     canvas.width = 700;
     canvas.height = 1000;
-    ctx.fillStyle = 'cornflowerblue';
     ctx.strokeStyle = '#ccc';
     ctx.lineWidth = 2;
     ctx.textAlign = 'start';
@@ -17,6 +16,7 @@ document.addEventListener('DOMContentLoaded', ()=>{
     ctx.fillText('Aksi 1',112,90);
     ctx.fillText('Aksi 2',512,90);
     ctx.fillText('Aksi 3',112,440);
+    ctx.fillText('Aksi 4',512,440);
 
 //Aksi1
     //Badan
@@ -161,6 +161,54 @@ document.addEventListener('DOMContentLoaded', ()=>{
     ctx.fillStyle = 'orange';
     ctx.fill();
     ctx.closePath();
-    ctx.restore();    
+    ctx.restore();  
+    
+//Aksi4
+    //Badan
+    //Kotak
+
+    ctx.save();
+    ctx.beginPath();
+    ctx.translate(500, 560);
+    ctx.rect(0,0,100,100)
+    ctx.fillStyle = 'red';
+    ctx.fill();
+    ctx.closePath();
+    ctx.restore();
+
+    //Tangan
+    //Kiri 
+    ctx.save();
+    ctx.beginPath();
+    ctx.translate(500, 540);
+    ctx.rotate(Math.PI*16/8);        //3.14 radians 180 deg
+    ctx.rect(0,0,100,25)
+    ctx.fillStyle = 'blue';
+    ctx.fill();
+    ctx.closePath();
+    ctx.restore();
+
+    //Muka
+    //Mata Kiri
+    ctx.save();
+    ctx.beginPath();
+    ctx.translate(525, 590)
+    ctx.scale(1,1)
+    ctx.arc(0, 0, 15, 0, Math.PI*2);
+    ctx.fillStyle = 'orange';
+    ctx.fill();
+    ctx.closePath();
+    ctx.restore();  
+
+    //Mata Kanan
+    ctx.save();
+    ctx.beginPath();
+    ctx.translate(575, 590)
+    ctx.scale(1,1)
+    ctx.arc(0, 0, 15, 0, Math.PI*2);
+    ctx.fillStyle = 'orange';
+    ctx.fill();
+    ctx.closePath();
+    ctx.restore();  
 });
 
