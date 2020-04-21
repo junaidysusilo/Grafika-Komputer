@@ -23,8 +23,8 @@ document.addEventListener('DOMContentLoaded', ()=>{
     //Kotak
     ctx.save();
     ctx.beginPath();
-    ctx.translate(100, 200);
-    ctx.rect(0,0,100,100)
+    ctx.translate(75, 200);
+    ctx.rect(0,0,150,100)
     ctx.fillStyle = 'red';
     ctx.fill();
     ctx.closePath();
@@ -34,9 +34,9 @@ document.addEventListener('DOMContentLoaded', ()=>{
     //Kiri 
     ctx.save();
     ctx.beginPath();
-    ctx.translate(100, 200);
+    ctx.translate(75, 200);
     ctx.rotate(Math.PI*-11/8);        //3.14 radians 180 deg
-    ctx.rect(0,0,100,25)
+    ctx.rect(0,0,150,25)
     ctx.fillStyle = 'blue';
     ctx.fill();
     ctx.closePath();
