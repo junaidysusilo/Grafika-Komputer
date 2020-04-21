@@ -16,7 +16,7 @@ document.addEventListener('DOMContentLoaded', ()=>{
     ctx.fillText('Aksi 1',112,90);
     ctx.fillText('Aksi 2',512,90);
     ctx.fillText('Aksi 3',190,440);
-    ctx.fillText('Aksi 4',512,440);
+    ctx.fillText('Aksi 4',570,440);
 
 //Aksi1
     //Badan
@@ -137,7 +137,7 @@ document.addEventListener('DOMContentLoaded', ()=>{
 
     ctx.save();
     ctx.beginPath();
-    ctx.translate(500, 560);
+    ctx.translate(540, 560);
     ctx.rect(0,0,150,100)
     ctx.fillStyle = 'red';
     ctx.fill();
@@ -148,7 +148,7 @@ document.addEventListener('DOMContentLoaded', ()=>{
     //Kiri 
     ctx.save();
     ctx.beginPath();
-    ctx.translate(500, 540);
+    ctx.translate(540, 540);
     ctx.rotate(Math.PI*16/8);        //3.14 radians 180 deg
     ctx.rect(0,0,150,25)
     ctx.fillStyle = 'blue';
@@ -160,7 +160,7 @@ document.addEventListener('DOMContentLoaded', ()=>{
     //Mata Kiri
     ctx.save();
     ctx.beginPath();
-    ctx.translate(575, 610)
+    ctx.translate(615, 610)
     ctx.scale(1,1)
     ctx.arc(0, 0, 35, 0, Math.PI*2);
     ctx.fillStyle = 'orange';
