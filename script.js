@@ -117,5 +117,52 @@ document.addEventListener('DOMContentLoaded', ()=>{
     ctx.closePath();
     ctx.restore();
     
+//Aksi3
+    //Badan
+    //Kotak
+
+    ctx.save();
+    ctx.beginPath();
+    ctx.translate(100, 760);
+    ctx.rect(0,0,100,100)
+    ctx.fillStyle = 'red';
+    ctx.fill();
+    ctx.closePath();
+    ctx.restore();
+
+    //Tangan
+    //Kiri 
+    ctx.save();
+    ctx.beginPath();
+    ctx.translate(100, 760);
+    ctx.rotate(Math.PI*-7/8);        //3.14 radians 180 deg
+    ctx.rect(0,0,100,25)
+    ctx.fillStyle = 'blue';
+    ctx.fill();
+    ctx.closePath();
+    ctx.restore();
+
+    //Muka
+    //Mata Kiri
+    ctx.save();
+    ctx.beginPath();
+    ctx.translate(125, 785)
+    ctx.scale(1,1)
+    ctx.arc(0, 0, 15, 0, Math.PI*2);
+    ctx.fillStyle = 'orange';
+    ctx.fill();
+    ctx.closePath();
+    ctx.restore();
+
+    //Mata Kanan
+    ctx.save();
+    ctx.beginPath();
+    ctx.translate(175, 785)
+    ctx.scale(1,1)
+    ctx.arc(0, 0, 15, 0, Math.PI*2);
+    ctx.fillStyle = 'orange';
+    ctx.fill();
+    ctx.closePath();
+    ctx.restore();    
 });
 
